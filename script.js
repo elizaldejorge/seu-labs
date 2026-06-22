@@ -1,36 +1,24 @@
-const navToggle = document.querySelector('.nav-toggle');
-const mainNav = document.querySelector('.main-nav');
-const navLinks = document.querySelectorAll('.main-nav a');
-const sections = [...document.querySelectorAll('main section[id]')];
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-if (navToggle && mainNav) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      mainNav.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
   });
 }
 
-const setActiveLink = () => {
-  const scrollPosition = window.scrollY + 140;
-  let current = '';
+const proposalForm = document.querySelector('#proposalForm');
+const successBox = document.querySelector('#formSuccess');
 
-  sections.forEach((section) => {
-    if (scrollPosition >= section.offsetTop) {
-      current = section.getAttribute('id');
-    }
+if (proposalForm && successBox) {
+  proposalForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(proposalForm);
+    const projectTitle = formData.get('projectTitle') || 'your project';
+    successBox.innerHTML = `<strong>Demo received.</strong><br>This prototype form does not submit data yet. In production, this would send “${projectTitle}” to the official SEU Labs intake workflow.`;
+    successBox.classList.add('show');
+    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
-
-  navLinks.forEach((link) => {
-    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
-  });
-};
-
-window.addEventListener('scroll', setActiveLink, { passive: true });
-setActiveLink();
+}

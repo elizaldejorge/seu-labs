@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEU Labs</title>
+  <meta name="description" content="SEU Labs pilot website for responsible AI-assisted academic application projects.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="SEU Labs home">
+        <img class="brand-logo" src="assets/stedwards-logo.png" alt="St. Edward's University logo">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-name">SEU Labs</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link active" href="apply.html">Apply</a><a class="nav-link" href="process.html">Process</a><a class="nav-link" href="guidelines.html">Guidelines</a><a class="nav-link" href="resources.html">Resources</a><a class="nav-link" href="projects.html">Projects</a><a class="nav-link" href="support.html">Support</a>
+        <a class="nav-cta" href="apply.html">Start a proposal</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">Apply</div>
+        <h1>Start a proposal.</h1>
+        <p class="page-lede">Use this clean demo intake form to collect the information SEU Labs needs before reviewing a faculty project idea. This version is built directly into the website, so it looks and feels like part of the service.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="form-shell">
+        <aside class="form-aside">
+          <div class="demo-note">
+            <strong>Prototype form</strong>
+            <p>This form is a front-end demo. It does not send data yet. Later, it can be connected to Google Forms, Google Sheets, Apps Script, or another approved intake workflow.</p>
+          </div>
+          <div class="card" style="margin-top:18px;">
+            <h3>Before submitting</h3>
+            <ul class="check-list">
+              <li>Describe the academic problem clearly.</li>
+              <li>Identify the intended audience.</li>
+              <li>Explain any data, login, or integration needs.</li>
+              <li>Share your comfort level with AI and coding tools.</li>
+            </ul>
+          </div>
+        </aside>
+
+        <form class="form-card" id="proposalForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="department">Department</label>
+              <input id="department" name="department" required>
+            </div>
+            <div class="field">
+              <label for="school">School</label>
+              <input id="school" name="school" required>
+            </div>
+            <div class="field full">
+              <label for="projectTitle">Project title</label>
+              <input id="projectTitle" name="projectTitle" placeholder="Example: Course reflection assistant" required>
+            </div>
+            <div class="field full">
+              <label for="idea">Project idea</label>
+              <textarea id="idea" name="idea" placeholder="Describe what you want to build and why it matters." required></textarea>
+            </div>
+            <div class="field">
+              <label for="audience">Primary audience</label>
+              <select id="audience" name="audience" required>
+                <option value="">Select one</option>
+                <option>Personal faculty use</option>
+                <option>Course or class use</option>
+                <option>Department use</option>
+                <option>Broader university use</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="aiExperience">AI and coding familiarity</label>
+              <select id="aiExperience" name="aiExperience" required>
+                <option value="">Select one</option>
+                <option>New to AI-assisted coding</option>
+                <option>Some experience</option>
+                <option>Comfortable experimenting</option>
+                <option>Advanced or technical</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="workflow">How should the app work?</label>
+              <textarea id="workflow" name="workflow" placeholder="Explain the user flow, inputs, outputs, and expected result." required></textarea>
+            </div>
+            <div class="field full">
+              <fieldset>
+                <legend>What data might the app use?</legend>
+                <div class="option-grid">
+                  <label class="choice"><input type="checkbox" name="data" value="No sensitive data"> No sensitive data</label>
+                  <label class="choice"><input type="checkbox" name="data" value="Student information"> Student information</label>
+                  <label class="choice"><input type="checkbox" name="data" value="PII or FERPA data"> PII or FERPA-protected data</label>
+                  <label class="choice"><input type="checkbox" name="data" value="Files or Drive content"> Files or Google Drive content</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="field">
+              <label for="accounts">Will users need accounts?</label>
+              <select id="accounts" name="accounts" required>
+                <option value="">Select one</option>
+                <option>No</option>
+                <option>Maybe</option>
+                <option>Yes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="integrations">Will it connect to SEU systems?</label>
+              <select id="integrations" name="integrations" required>
+                <option value="">Select one</option>
+                <option>No</option>
+                <option>Maybe</option>
+                <option>Yes</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="tools">Tools you are interested in</label>
+              <input id="tools" name="tools" placeholder="Example: Google, GitHub, Gemini, Claude, Replit, Cursor">
+            </div>
+            <div class="field full">
+              <label for="success">What would success look like?</label>
+              <textarea id="success" name="success" placeholder="Describe how you would know this prototype worked." required></textarea>
+            </div>
+          </div>
+          <div class="actions-row" style="margin-top:22px;">
+            <button class="btn btn-primary" type="submit">Submit demo proposal</button>
+            <a class="btn btn-secondary" href="process.html">Review the process</a>
+          </div>
+          <div id="formSuccess" class="form-success" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-card"><img src="assets/stedwards-logo.png" alt="St. Edward's University logo"></div>
+          <h2>SEU Labs</h2>
+          <p>A faculty pilot for building AI-assisted academic applications with a clear review, prototype, and launch process.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Project path</h3>
+          <ul>
+            <li>Submit</li>
+            <li>Review</li>
+            <li>Prototype</li>
+            <li>Test and launch</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <p>Use the support page to find onboarding, troubleshooting, documentation, and community resources.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>St. Edward’s University · SEU Labs</span>
+        <span>Faculty pilot website · Updated June 2026</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

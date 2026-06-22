@@ -1,363 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SEU Labs is a faculty pilot for building, testing, and launching AI-assisted academic applications safely at St. Edward's University." />
-  <title>SEU Labs | St. Edward's University</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEU Labs</title>
+  <meta name="description" content="SEU Labs pilot website for responsible AI-assisted academic application projects.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="SEU Labs home">
-        <img src="assets/stedwards-logo.png" alt="St. Edward's University logo" />
-        <span>SEU Labs</span>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="SEU Labs home">
+        <img class="brand-logo" src="assets/stedwards-logo.png" alt="St. Edward's University logo">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-name">SEU Labs</span>
       </a>
-
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#apply">Apply</a>
-        <a href="#process">Process</a>
-        <a href="#guidelines">Guidelines</a>
-        <a href="#resources">Resources</a>
-        <a href="#projects">Projects</a>
-        <a href="#support">Support</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link" href="apply.html">Apply</a><a class="nav-link" href="process.html">Process</a><a class="nav-link" href="guidelines.html">Guidelines</a><a class="nav-link" href="resources.html">Resources</a><a class="nav-link" href="projects.html">Projects</a><a class="nav-link" href="support.html">Support</a>
+        <a class="nav-cta" href="apply.html">Start a proposal</a>
       </nav>
-
-      <a class="nav-cta" href="#apply">Start a proposal</a>
     </div>
   </header>
-
   <main id="main">
-    <section class="hero section-pad">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Faculty Pilot • Internal University Resource</p>
-          <h1>Build AI-assisted academic applications safely.</h1>
-          <p class="hero-text">
-            SEU Labs helps St. Edward's University faculty explore AI-assisted development while protecting university data, reducing shadow IT, and creating a clear path from idea to prototype.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#apply">Apply to SEU Labs</a>
-            <a class="btn btn-secondary" href="#process">See how it works</a>
-          </div>
-          <div class="hero-notes" aria-label="Pilot highlights">
-            <span>Faculty-focused pilot</span>
-            <span>Security review</span>
-            <span>Student ambassador support</span>
-          </div>
-        </div>
 
-        <div class="hero-panel" aria-label="SEU Labs overview card">
-          <div class="panel-header">
-            <span class="status-dot"></span>
-            <p>Pilot pathway</p>
-          </div>
-          <h2>From idea to tested prototype</h2>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Faculty AI Innovation Pilot</p>
+        <h1>Build AI-assisted academic apps safely.</h1>
+        <p class="hero-text">SEU Labs helps St. Edward’s University faculty move from idea to working prototype with a thoughtful path for value, feasibility, privacy, security, and long-term support.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="apply.html">Apply to SEU Labs</a>
+          <a class="btn btn-secondary" href="process.html">See the process</a>
+        </div>
+        <div class="pill-row" aria-label="Program highlights">
+          <span class="pill">Faculty-focused pilot</span>
+          <span class="pill">Security review</span>
+          <span class="pill">Prototype support</span>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="SEU Labs pathway overview">
+        <div class="panel-content">
+          <p class="panel-kicker">Pilot pathway</p>
+          <h2 class="panel-title">From idea to tested prototype</h2>
           <div class="path-list">
-            <div>
-              <strong>01</strong>
-              <span>Submit a project idea through the intake form.</span>
-            </div>
-            <div>
-              <strong>02</strong>
-              <span>Review feasibility, value, security, FERPA, and costs.</span>
-            </div>
-            <div>
-              <strong>03</strong>
-              <span>Build with a recommended stack and support team.</span>
-            </div>
-            <div>
-              <strong>04</strong>
-              <span>Test, document, launch, continue, or retire.</span>
-            </div>
+            <div class="path-item"><div class="path-number">01</div><div class="path-text">Submit a project proposal through the intake form.</div></div>
+            <div class="path-item"><div class="path-number">02</div><div class="path-text">Review value, feasibility, data use, privacy, security, and costs.</div></div>
+            <div class="path-item"><div class="path-number">03</div><div class="path-text">Build with a recommended stack, documentation, and support.</div></div>
+            <div class="path-item"><div class="path-number">04</div><div class="path-text">Test, launch, continue, revise, or retire.</div></div>
           </div>
         </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow">Why it exists</p>
+        <h2 class="section-title">Innovation needs a safe path.</h2>
+        <p class="section-text">AI-assisted coding tools make it easier to prototype quickly. SEU Labs creates a structured way to explore those ideas while protecting institutional data and supporting sustainable projects.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card soft"><div class="icon-box">01</div><h3>Reduce shadow IT</h3><p>Bring experimental app ideas into a visible, supported process instead of having tools built in isolation.</p></article>
+        <article class="card soft"><div class="icon-box">02</div><h3>Support faculty ideas</h3><p>Help faculty test creative academic tools without needing to become full-time software developers.</p></article>
+        <article class="card soft"><div class="icon-box">03</div><h3>Build responsibly</h3><p>Review security, privacy, FERPA, data use, integrations, and maintenance before a tool is launched.</p></article>
       </div>
     </section>
 
-    <section class="section-pad compact">
-      <div class="container">
-        <div class="intro-card">
-          <p class="eyebrow">What is SEU Labs?</p>
-          <h2>A secure sandbox for responsible AI innovation.</h2>
-          <p>
-            SEU Labs is designed for faculty who want to create AI-assisted or “vibe-coded” applications using tools such as Gemini, GitHub, GitHub Copilot, Claude Code, Cursor, Replit, and Google-based development options.
-          </p>
-        </div>
-
-        <div class="feature-grid three">
-          <article class="feature-card">
-            <div class="icon-box">01</div>
-            <h3>Encourage innovation</h3>
-            <p>Support creative teaching and learning ideas without leaving faculty to build alone.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box">02</div>
-            <h3>Reduce shadow IT</h3>
-            <p>Create a visible, reviewed process for academic apps before they become risk points.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-box">03</div>
-            <h3>Protect university data</h3>
-            <p>Review privacy, FERPA, data use, account access, and integration concerns early.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-muted" id="apply">
-      <div class="container split-grid">
+    <section class="section">
+      <div class="feature-strip">
         <div>
-          <p class="eyebrow">Apply to SEU Labs</p>
-          <h2>Submit a faculty project idea.</h2>
-          <p>
-            During the pilot phase, SEU Labs is focused on faculty-led projects funded by the Teaching, Learning, and Technology Roundtable. The application form helps the team understand project goals, audience, technical needs, and possible risks.
-          </p>
-          <div class="button-row">
-            <a class="btn btn-primary" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" rel="noopener">Open intake form</a>
-            <a class="btn btn-ghost" href="#guidelines">Review guidelines first</a>
-          </div>
-          <p class="small-note">Replace <strong>YOUR_GOOGLE_FORM_LINK_HERE</strong> in the HTML with Rebecca's Google Form link.</p>
+          <p class="eyebrow">What SEU Labs provides</p>
+          <h2 class="section-title">A polished service model for AI projects.</h2>
+          <p class="section-text">The pilot is designed to learn what support model works best for faculty-led AI-assisted applications.</p>
         </div>
-
-        <div class="check-card">
-          <h3>The form should collect</h3>
-          <ul class="clean-list">
-            <li>Name, department, and school</li>
-            <li>Project idea and intended audience</li>
-            <li>Personal, course, department, or broader use</li>
-            <li>Coding ability and AI familiarity</li>
-            <li>Data collected, stored, or connected</li>
-            <li>User accounts, integrations, and possible costs</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="process">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">How the process works</p>
-          <h2>Clear steps from proposal to launch.</h2>
-          <p>Each project moves through intake, review, development, testing, and lifecycle planning.</p>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <span>1</span>
-            <h3>Submit</h3>
-            <p>Faculty submit a Google Form with the project idea, goals, audience, and technical background.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Intake meeting</h3>
-            <p>The team reviews usefulness, feasibility, data needs, AI usage, integrations, and support needs.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Internal profile</h3>
-            <p>Staff create a project profile with risks, estimated costs, recommended path, and next steps.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Review</h3>
-            <p>Security, privacy, FERPA, infrastructure, user accounts, and scaling risks are reviewed.</p>
-          </article>
-          <article>
-            <span>5</span>
-            <h3>Build</h3>
-            <p>Approved projects receive a designated technical path and support from staff and student ambassadors.</p>
-          </article>
-          <article>
-            <span>6</span>
-            <h3>Test and decide</h3>
-            <p>The prototype is tested, documented, launched, revised, continued, or retired.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-dark" id="guidelines">
-      <div class="container">
-        <div class="section-heading light">
-          <p class="eyebrow">Project guidelines</p>
-          <h2>What makes a strong SEU Labs project?</h2>
-          <p>Good projects solve a real problem, fit the pilot, and can be reviewed before deployment.</p>
-        </div>
-
-        <div class="feature-grid three dark-cards">
-          <article class="feature-card">
-            <h3>Educational value</h3>
-            <p>The project should support teaching, learning, academic work, or a clear university need.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Feasibility</h3>
-            <p>The project should be realistic to prototype and should not duplicate an existing SEU tool unnecessarily.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Responsible data use</h3>
-            <p>The project must avoid unnecessary PII and follow FERPA, AI policy, and security expectations.</p>
-          </article>
-        </div>
-
-        <div class="review-box">
-          <h3>Questions reviewed before approval</h3>
-          <div class="question-grid">
-            <p>Does the project collect data?</p>
-            <p>Where is the data stored?</p>
-            <p>Does it use FERPA-protected information?</p>
-            <p>Does it require user accounts?</p>
-            <p>Does it connect to Google Drive or SEU systems?</p>
-            <p>Where is AI used?</p>
-            <p>What are the hosting or token costs?</p>
-            <p>Who maintains it after the pilot year?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="resources">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Resources & tools</p>
-          <h2>Support for faculty and builders.</h2>
-          <p>The official stack will be refined during the pilot. A Google-first approach is being explored alongside GitHub and AI coding tools.</p>
-        </div>
-
-        <div class="resource-grid">
-          <article>
-            <h3>Google-first options</h3>
-            <p>Google Sites, Forms, Sheets, Drive, Gemini, and possible Google Cloud sandbox options.</p>
-          </article>
-          <article>
-            <h3>Development paths</h3>
-            <p>GitHub organization access, code repositories, templates, and recommended deployment paths.</p>
-          </article>
-          <article>
-            <h3>AI-assisted coding</h3>
-            <p>Guidance for tools such as GitHub Copilot, Claude Code, Cursor, Replit, and Gemini coding tools.</p>
-          </article>
-          <article>
-            <h3>Documentation</h3>
-            <p>Project notes, support guides, staff intake templates, testing notes, and launch documentation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-muted" id="projects">
-      <div class="container split-grid align-start">
-        <div>
-          <p class="eyebrow">Approved projects</p>
-          <h2>Project directory</h2>
-          <p>
-            Approved SEU Labs projects will appear here during the pilot. This page can eventually connect to a Google Sheet or project database.
-          </p>
-          <div class="status-row">
-            <span>Submitted</span>
-            <span>Under Review</span>
-            <span>In Development</span>
-            <span>Prototype Ready</span>
-            <span>Launched</span>
-            <span>Paused</span>
-          </div>
-        </div>
-
-        <div class="empty-state">
-          <p class="eyebrow">Directory status</p>
-          <h3>No approved projects yet</h3>
-          <p>Once the first pilot projects are approved, add project cards here with the project name, faculty lead, department, status, tools used, and documentation link.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="support">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Community & support</p>
-          <h2>Faculty are not building alone.</h2>
-          <p>SEU Labs is designed to combine staff guidance, student ambassador support, faculty learning, and community practice.</p>
-        </div>
-
-        <div class="feature-grid four">
-          <article class="mini-card">
-            <h3>Onboarding</h3>
-            <p>Initial training to help faculty start with the tools and the review process.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Student ambassadors</h3>
-            <p>Support for development, technical reviews, documentation, testing, and troubleshooting.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Monthly meetups</h3>
-            <p>Regular space for demos, questions, project work, and shared lessons.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Google Chat space</h3>
-            <p>Lightweight community support for updates, questions, and project collaboration.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad roadmap-section">
-      <div class="container roadmap-card">
-        <div>
-          <p class="eyebrow">Pilot roadmap</p>
-          <h2>Immediate next steps</h2>
-          <p>These are the current internal actions for moving the pilot toward a working prototype.</p>
-        </div>
-        <ul class="clean-list roadmap-list">
-          <li><strong>Casey:</strong> set up GitHub and think through possible technical paths.</li>
-          <li><strong>Rebecca:</strong> set up the website and Google Form.</li>
-          <li><strong>Rebecca:</strong> write internal process documentation.</li>
-          <li><strong>Team:</strong> prepare a prototype for Emma and Paul to test next week.</li>
-          <li><strong>Rebecca:</strong> begin the Asana project or organize the workflow in Google.</li>
+        <ul class="check-list">
+          <li>Project intake and feasibility review</li>
+          <li>Privacy, security, and data-use guidance</li>
+          <li>Recommended tools and development paths</li>
+          <li>Prototype, testing, and documentation support</li>
+          <li>Lifecycle planning for maintenance or retirement</li>
         </ul>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/stedwards-logo.png" alt="St. Edward's University logo" />
-        <h2>SEU Labs</h2>
-        <p>Build, test, and launch AI-assisted academic applications safely.</p>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-card"><img src="assets/stedwards-logo.png" alt="St. Edward's University logo"></div>
+          <h2>SEU Labs</h2>
+          <p>A faculty pilot for building AI-assisted academic applications with a clear review, prototype, and launch process.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Project path</h3>
+          <ul>
+            <li>Submit</li>
+            <li>Review</li>
+            <li>Prototype</li>
+            <li>Test and launch</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <p>Use the support page to find onboarding, troubleshooting, documentation, and community resources.</p>
+        </div>
       </div>
-      <div>
-        <h3>Quick links</h3>
-        <a href="#apply">Apply</a>
-        <a href="#process">Process</a>
-        <a href="#guidelines">Guidelines</a>
-        <a href="#resources">Resources</a>
+      <div class="footer-bottom">
+        <span>St. Edward’s University · SEU Labs</span>
+        <span>Faculty pilot website · Updated June 2026</span>
       </div>
-      <div>
-        <h3>Pilot information</h3>
-        <p>SEU Labs is currently in its pilot phase and focused on faculty-led projects for internal university use.</p>
-      </div>
-      <div>
-        <h3>Support</h3>
-        <p>For questions, contact the SEU Labs team through the approved support process.</p>
-        <a href="#support">View support options</a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>St. Edward's University • Internal Resource • Last updated June 2026</p>
-      <a href="#top">Back to top</a>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
